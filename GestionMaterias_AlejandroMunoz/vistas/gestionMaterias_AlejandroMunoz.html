@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/gestionMaterias.css" />
+    <script src='../scripts/gestionMaterias_AlejandroMunoz.js'></script>
+</head>
+
+<body onload="buscarMateria()">
+    <div class="principal">
+        <div class="logoEscuela">
+            <img src="./imagenes/logoKrakeDev.png" width="80%" />
+        </div>
+
+        <div class="contenido">
+            <div class="titulo">
+                PROMEDIO DE NOTAS
+            </div>
+
+            <div class="ingresoDatos">
+                <div class="tituloCampo">
+                    Nombre Materia
+                </div>
+                <div>
+                    <input type="text" class="cajaTexto" id="txtNombreMateria"/>
+                    
+                </div>
+            </div>
+           
+            <div class="ingresoDatos">
+                <div class="tituloCampo">
+                    Codigo Materia
+                </div>
+                <div>
+                    <input type="text" class="cajaTexto" id="txtCodigo"/>
+                   
+                </div>
+            </div>
+            <div class="ingresoDatos">
+                <div class="tituloCampo">
+                    Descripcion Materia
+                </div>
+                <div>
+                    <input type="text" class="cajaTexto" id="txtDescripcion"/>
+                    
+                </div>
+            </div>
+            <div class="botones">
+                <div class="contenedorBoton">
+                    <input type="button" value="AGREGAR"
+                     class="estiloBoton" onclick="agregarMateria();" />
+                </div>
+            </div>
+            <div class="botones">
+                <div class="contenedorBoton">
+                    <input type="button" value="REFRESCAR"
+                     class="estiloBoton" onclick="refrescarMateria();" />
+                </div>
+            </div>
+
+            <div class="ingresoDatos">
+                <div class="tituloCampo">
+                    BUSCAR CODIGO MATERIA
+                </div>
+                <div>
+                    <input type="text" class="cajaTexto" id="txtBuscar"/>
+                </div>
+
+                
+            </div>
+            <div class="botones">
+                <div class="contenedorBoton">
+                    <input type="button" id="txtBuscar" value="BUSCAR"
+                     class="estiloBoton" onclick="buscarMateria();" />
+                </div>
+            </div>
+
+        </div>
+        <div class="areaResultado">
+            
+            <div id="tablaMaterias"></div>
+            <div class="imagenResultado">
+                <img id="lblimg" width="50%" />
+            </div>
+            
+        </div>
+
+        
+
+    </div>
+</body>
+
+</html>
