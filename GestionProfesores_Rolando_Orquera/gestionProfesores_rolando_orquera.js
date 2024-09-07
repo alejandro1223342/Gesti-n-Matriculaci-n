@@ -41,12 +41,16 @@ const refrescarProfesor = () => {
 
 const buscarProfesor = () => {
     const nombre = recuperarTexto('txtBuscar');
+    let esEncontrado = false;
     for (let i = 0; i < profesores.length; i++) {
         if (profesores[i].nombre == nombre) {
             alert('Profesor encontrado ' + nombre);
-        } else {
-            alert('Profesor no encontrado ');
+            esEncontrado = true;
+            break;
         }
+    }
+    if (!esEncontrado) {
+        alert('No se encontro el profesor.');
     }
 }
 
