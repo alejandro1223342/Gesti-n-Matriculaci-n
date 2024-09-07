@@ -99,3 +99,29 @@ buscarMateria = function(){
 }
 
 
+
+function eliminarMateria() {
+    let codigoMateria = document.getElementById("txtEliminar").value;
+    
+    let nuevasMaterias = [];
+    let materiaEncontrada = false;
+
+    for (let i = 0; i < materias.length; i++) {
+        if (materias[i].codigo === codigoMateria) {
+            materiaEncontrada = true;
+            break; 
+        }
+        nuevasMaterias.push(materias[i]); 
+    }
+    
+    if (materiaEncontrada) {
+        materias = nuevasMaterias; 
+        alert("Materia Eliminada");
+    } else {
+        alert("Materia No Encontrada");
+    }
+
+    refrescarMateria();
+}
+
+
