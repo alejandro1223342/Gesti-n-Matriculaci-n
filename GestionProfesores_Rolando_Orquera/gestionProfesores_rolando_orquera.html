@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./gestionProfesores_rolando_orquera.js"></script>
+    <script src="./utilitarios.js"></script>
+    <link rel="stylesheet" href="./profesores.css">
+</head>
+<body onload="refrescarProfesor()">
+    <div class="principal">
+        <img src="./krake.png">
+    </div>
+    <div class="principal">
+        <label>Nombre</label>
+        <input type="text" id="txtNombre">
+        <label>Edad</label>
+        <input type="text" id="txtEdad">
+        <label>Email</label>
+        <input type="text" id="txtEmail">
+        <label>Buscar</label>
+        <input type="text" id="txtBuscar">
+        <div class="botones">
+            <input type="button" value="Buscar" onclick="buscarProfesor()">
+            <input type="button" value="Guardar" onclick="agregarProfesor()">
+            <input type="button" value="Refrescar" onclick="refrescarProfesor()">
+            <input type="button" value="Eliminar" onclick="eliminarProfesor()">
+        </div>
+        <div id="tablaProfesores"></div>
+    </div>
+</body>
+</html>
