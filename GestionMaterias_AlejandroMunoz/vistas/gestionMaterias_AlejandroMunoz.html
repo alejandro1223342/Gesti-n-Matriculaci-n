@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="./../css/gestionMaterias_AlejandroMunoz.css" />
+    <link rel="stylesheet" href="../css/gestionMaterias.css" />
     <script src='../scripts/gestionMaterias_AlejandroMunoz.js'></script>
 </head>
 
@@ -68,12 +68,33 @@
 
                 
             </div>
+            
             <div class="botones">
                 <div class="contenedorBoton">
                     <input type="button" id="txtBuscar" value="BUSCAR"
-                     class="estiloBoton" onclick="buscarMateria();" />
+                     class="estiloBoton" onclick="eliminarMateria();" />
+                     
                 </div>
+            </div> 
+            
+            <div class="ingresoDatos">
+                <div class="tituloCampo">
+                    ELIMINAR CODIGO MATERIA
+                </div>
+                <div>
+                    <input type="text" class="cajaTexto" id="txtEliminar"/>
+                </div>
+
+                
             </div>
+            
+            <div class="botones">
+                <div class="contenedorBoton">
+                    <input type="button" id="txtEliminar" value="ELIMINAR"
+                     class="estiloBoton" onclick="eliminarMateria();" />
+                     
+                </div>
+            </div> 
 
         </div>
         <div class="areaResultado">
@@ -84,6 +105,8 @@
             </div>
             
         </div>
+
+        
 
         
 
