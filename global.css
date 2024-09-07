@@ -4,7 +4,8 @@
     font-weight: bold;
 }
 nav {
-    background-color: #232323;
+    color-scheme: dark light;
+    background-color: #0008;
     padding: 2em .5em;
 }
 ul {
