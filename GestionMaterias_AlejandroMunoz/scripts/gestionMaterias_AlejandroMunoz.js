@@ -93,6 +93,7 @@ buscarMateria = function(){
         }else{
             componente.src="../img/colgado.png"
             alert("Materia No Encontrada")
+            break;
         }
     }
    
