@@ -17,27 +17,26 @@
         <input type="text" id="txtCurso" >
         <h4>Materia</h4>
         <input type="text" id="txtMatricula">
+        <div class="areaBoton">
+            <input type="button" value="GUARDAR" onclick="agregarEstudiante();">
+            <input type="button" value="REFRESCAR" onclick="refrescarEstudiante();">
+        </div>
         <h4>Búscar Estudiante</h4>
         <input type="text" id="txtBuscar">
+        <div class="areaBoton">
+            <input type="button" value="BUSCAR ESTUDIANTE" onclick="buscarEstudiante();">
+        </div>
         <h4>Eliminar Estudiante</h4>
         <input type="text" id="txtEliminar">
-        <p></p>
         <div class="areaBoton">
-        <input type="button" value="GUARDAR" onclick="agregarEstudiante();">
-        <p></p>
-        <input type="button" value="REFRESCAR" onclick="refrescarEstudiante();">
-        <p></p>
-        <input type="button" value="BUSCAR ESTUDIANTE" onclick="buscarEstudiante();">
-        <p></p>
-        <input type="button" value="ElIMINAR ESTUDIANTE" onclick="buscarEstudiante();">
+        <input type="button" value="ElIMINAR ESTUDIANTE" onclick="eliminarEstudiante();">
         </div>
-        
     </form>
     
     <div id="tablaEstudiante">
         
     </div>
-    <img src="logoKrakeDev.png" height="300px"/>
+    <img src="logoKrakeDev.png" height="150px"/>
 </div>
 </body>
 </html>
