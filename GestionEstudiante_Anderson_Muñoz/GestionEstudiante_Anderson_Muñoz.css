@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center; 
+    position: absolute;
+    height: 100vh;
+    top: 50%; 
+    left: 50%;   
+    transform: translate(-50%, -50%); 
+    background: #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.areaBoton {
+    display: flex;  
+    justify-content: center; 
+    gap: 7px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: rebeccapurple;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    margin: 0; 
+    color: navy;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px auto;
+    display: block;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    flex-direction: row;
+    text-align: center;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+.img {
+    display: flex;
+    justify-content: center; 
+    margin: 0;   
+}
+
+table {
+    background-color: #000; 
+    width: 100%; 
+    color: #fff; 
+    border-collapse: collapse; 
+}
+
+th, td {
+    text-align: center; 
+    color: #fff; 
+    padding: 8px; 
+}
+
+thead th {
+    background-color: #000; 
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #908efc; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: #6a51cf; 
+}
+
+
+
+

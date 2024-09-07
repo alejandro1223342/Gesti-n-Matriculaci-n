@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="GestionEstudiante_Anderson_Muñoz.js"></script>
+    <link rel="stylesheet" href="GestionEstudiante_Anderson_Muñoz.css">
+    <title>Gestión Estudiante</title>
+</head>
+<body>
+    <div class="principal">
+    <form action="#">
+        <h1>Evaluación Módulo 1</h1>
+        <h4>Nombre</h4>
+        <input type="text" id="txtNombre" >
+        <h4>Curso</h4>
+        <input type="text" id="txtCurso" >
+        <h4>Materia</h4>
+        <input type="text" id="txtMatricula">
+        <h4>Búscar Estudiante</h4>
+        <input type="text" id="txtBuscar">
+        <h4>Eliminar Estudiante</h4>
+        <input type="text" id="txtEliminar">
+        <p></p>
+        <div class="areaBoton">
+        <input type="button" value="GUARDAR" onclick="agregarEstudiante();">
+        <p></p>
+        <input type="button" value="REFRESCAR" onclick="refrescarEstudiante();">
+        <p></p>
+        <input type="button" value="BUSCAR ESTUDIANTE" onclick="buscarEstudiante();">
+        <p></p>
+        <input type="button" value="ElIMINAR ESTUDIANTE" onclick="buscarEstudiante();">
+        </div>
+        
+    </form>
+    
+    <div id="tablaEstudiante">
+        
+    </div>
+    <img src="logoKrakeDev.png" height="300px"/>
+</div>
+</body>
+</html>
