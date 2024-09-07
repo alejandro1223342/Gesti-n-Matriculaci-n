@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de materias</title>
+    <script src="gestionMaterias_Brandon.js"></script>
+    <script src="utilitarios.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="refrescarMaterias()">
+    <h1>GESTION DE MATERIAS</h1>
+    <div class="contenedor-formulario">
+        <div class="formulario">
+            <img src="./img/notas.png" alt="">
+            <input id="txtNombreMateria" placeholder="Nombre" type="text">
+            <input id="txtCodigo" placeholder="Codigo" type="text">
+            <input id="txtDescripcion" placeholder="Descripcion" type="text">
+            <input id="txtBuscar" placeholder="Buscar" type="text">
+            <input type="button" value="GUARDAR" onclick="agregarMateria()">
+            <input type="button" value="REFRESCAR" onclick="refrescarMaterias()">
+            <input type="button" value="BUSCAR" onclick="buscarMateria()">
+        </div>
+    </div>
+
+    <div id="mostrarTabla">
+    </div>
+</body>
+
+</html>
