@@ -19,6 +19,7 @@ const crearMateria = () => {
 const agregarMateria = () => {
     let materia = crearMateria()
     materias.push(materia)
+    refrescarMaterias()
 }
 
 const refrescarMaterias = () => {
@@ -86,4 +87,5 @@ const eliminarMateria = () => {
         }
     }
     materias = materiasEncontradas
+    refrescarMaterias()
 }

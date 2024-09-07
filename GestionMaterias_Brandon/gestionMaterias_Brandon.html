@@ -15,17 +15,17 @@
         <nav>
             <ul>
                 <li>
-                    <a href="./gestionMaterias_Brandon.html">Materia Brandon</button>
+                    <a href="./gestionMaterias_Brandon.html">Materia Brandon</a>
                 </li>
                 <li>
                     <a href="./../GestionMaterias_AlejandroMunoz/vistas/gestionMaterias_AlejandroMunoz.html">Materias
-                        Alejandro</button>
+                        Alejandro</a>
                 </li>
                 <li>
-                    <a href="./../GestionProfesores_Rolando_Orquera/gestionProfesores_rolando_orquera.html">Profesores</button>
+                    <a href="./../GestionProfesores_Rolando_Orquera/gestionProfesores_rolando_orquera.html">Profesores</a>
                 </li>
                 <li>
-                    <a href="./../GestionEstudiante_Anderson_Muñoz/GestionEstudiante_Anderson_Muñoz.html">Estudiantes</button>
+                    <a href="./../GestionEstudiante_Anderson_Muñoz/GestionEstudiante_Anderson_Muñoz.html">Estudiantes</a>
                 </li>
             </ul>
         </nav>
@@ -34,11 +34,16 @@
     <div class="contenedor-formulario">
         <div class="formulario">
             <img src="./img/notas.png" alt="">
-            <input id="txtNombreMateria" placeholder="Nombre" type="text">
+            <label for="">Nombre</label>
+            <input id="txtNombreMateria" placeholder="Nombre" type=
+            <label for="">Codigo</label>
             <input id="txtCodigo" placeholder="Codigo" type="text">
-            <input id="txtDescripcion" placeholder="Descripcion" type="text">
-            <input id="txtBuscar" placeholder="Buscar(Codigo)" type="text">
-            <input id="txtEliminar" placeholder="Eliminar(Codigo)" type="text">
+            <label for="">Descripcion</label>
+            <input id="txtDescripcion" placeholder="Descripcion" type="text
+            <label for="">Buscar</label>
+            <input id="txtBuscar" placeholder="Codigo" type="text">
+            <label for="">Eliminar</label>
+            <input id="txtEliminar" placeholder="Codigo" type="text">
             <input type="button" value="GUARDAR" onclick="agregarMateria()">
             <input type="button" value="REFRESCAR" onclick="refrescarMaterias()">
             <input type="button" value="BUSCAR" onclick="buscarMateria()">
