@@ -64,13 +64,26 @@ const buscarMateria = (codigo) => {
     let txtCodigo = recuperarTexto("txtBuscar")
     for (let i = 0; i < materias.length; i++) {
         const materia = materias[i];
-        if(materia.codigo == txtCodigo){
+        if (materia.codigo == txtCodigo || materia.codigo == codigo) {
             materiaEncontrada = materia
         }
-    } 
-    if(materiaEncontrada != null) {
+    }
+    if (materiaEncontrada != null) {
         alert("Materia encontrada")
     } else {
         alert("Materia no encontrada")
     }
+    return
+}
+
+const eliminarMateria = () => {
+    let materiasEncontradas = []
+    let codigo = recuperarTexto("txtEliminar")
+    for (let i = 0; i < materias.length; i++) {
+        let materia = materias[i];
+        if (materia.codigo != codigo) {
+            materiasEncontradas.push(materia)
+        }
+    }
+    materias = materiasEncontradas
 }

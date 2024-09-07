@@ -7,7 +7,7 @@
     <title>Gestion de materias</title>
     <script src="gestionMaterias_Brandon.js"></script>
     <script src="utilitarios.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gestionMaterias_Brandon.css">
 </head>
 
 <body onload="refrescarMaterias()">
@@ -18,10 +18,12 @@
             <input id="txtNombreMateria" placeholder="Nombre" type="text">
             <input id="txtCodigo" placeholder="Codigo" type="text">
             <input id="txtDescripcion" placeholder="Descripcion" type="text">
-            <input id="txtBuscar" placeholder="Buscar" type="text">
+            <input id="txtBuscar" placeholder="Buscar(Codigo)" type="text">
+            <input id="txtEliminar" placeholder="Eliminar(Codigo)" type="text">
             <input type="button" value="GUARDAR" onclick="agregarMateria()">
             <input type="button" value="REFRESCAR" onclick="refrescarMaterias()">
             <input type="button" value="BUSCAR" onclick="buscarMateria()">
+            <input type="button" value="ELIMINAR" onclick="eliminarMateria()">
         </div>
     </div>
 
